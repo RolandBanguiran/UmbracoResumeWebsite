@@ -34,3 +34,9 @@
 # Ignore binary folders
 **/bin/
 **/obj/
+
+# Ignore connection strings
+**/ConnectionStrings.config
+
+# Ignore template source files
+/TemplateSource/
