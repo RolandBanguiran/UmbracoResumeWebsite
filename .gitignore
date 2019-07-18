@@ -24,3 +24,13 @@
 
 # Ignore the Models Builder models out of date flag
 **/App_Data/Models/ood.flag
+
+# Ignore NUGet packages folder
+/packages/
+
+# Ignore .vs folder
+/.vs/
+
+# Ignore binary folders
+**/bin/
+**/obj/
