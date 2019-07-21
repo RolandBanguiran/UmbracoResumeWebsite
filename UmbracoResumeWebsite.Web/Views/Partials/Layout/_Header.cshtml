@@ -1,0 +1,25 @@
+﻿@using UmbracoResumeWebsite.Web.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<UmbracoNavigationList>
+@using Umbraco.Web
+
+<!-- Header -->
+<header id="header" class="bg-white hidden-sm hidden-xs">
+
+    <!-- Photo -->
+    <a href="#" class="photo">
+        <img src="/assets/img/photos/eco-avatar-96x96.jpg" alt="...">
+    </a>
+
+
+    @{Html.RenderAction("RenderMainNavigation", "SiteLayout");}
+
+    <!-- Social Media -->
+    <div class="social-media pull-right">
+        <strong class="text-sm">Check my social media!</strong>
+        <a href="#" class="icon icon-xs margin-l-20"><i class="fa fa-facebook text-muted"></i></a>
+        <a href="#" class="icon icon-xs"><i class="fa fa-twitter text-muted"></i></a>
+        <a href="#" class="icon icon-xs"><i class="fa fa-google-plus text-muted"></i></a>
+    </div>
+
+</header>
+<!-- Header / End -->
