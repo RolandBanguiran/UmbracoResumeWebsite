@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
 using Umbraco.Web.Mvc;
-using UmbracoResumeWebsite.Core.Models;
+using UmbracoResumeWebsite.Helpers;
 
 namespace UmbracoResumeWebsite.Core.Controllers
 {
@@ -20,7 +20,7 @@ namespace UmbracoResumeWebsite.Core.Controllers
         public ActionResult RenderMainNavigation()
         {
             var root = Umbraco.ContentAtRoot().First();
-            var navigation = new UmbracoNavigation(root);
+            var navigation = new Navigation(root);
 
             return PartialView("Layout/_Navigation", navigation.GetItems(false));
         }

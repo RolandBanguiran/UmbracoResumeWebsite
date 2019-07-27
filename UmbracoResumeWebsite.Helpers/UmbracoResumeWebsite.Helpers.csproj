@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9D21B1DC-C9DB-4585-8B5B-5FA22D9317C1}</ProjectGuid>
+    <ProjectGuid>{A4B2A70A-9038-4ED1-880C-C728A235A504}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UmbracoResumeWebsite.Core</RootNamespace>
-    <AssemblyName>UmbracoResumeWebsite.Core</AssemblyName>
+    <RootNamespace>UmbracoResumeWebsite.Helpers</RootNamespace>
+    <AssemblyName>UmbracoResumeWebsite.Helpers</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -257,7 +257,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\SiteLayoutController.cs" />
+    <Compile Include="Models\NavigationList.cs" />
+    <Compile Include="Models\NavigationListItem.cs" />
+    <Compile Include="Navigation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -268,12 +270,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UmbracoResumeWebsite.Helpers\UmbracoResumeWebsite.Helpers.csproj">
-      <Project>{a4b2a70a-9038-4ed1-880c-c728a235a504}</Project>
-      <Name>UmbracoResumeWebsite.Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -288,9 +284,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55437</DevelopmentServerPort>
+          <DevelopmentServerPort>56222</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54798/</IISUrl>
+          <IISUrl>http://localhost:56222/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
