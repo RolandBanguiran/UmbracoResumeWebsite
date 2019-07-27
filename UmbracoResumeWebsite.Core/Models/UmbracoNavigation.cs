@@ -5,7 +5,7 @@ using System.Runtime.Caching;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace UmbracoResumeWebsite.Web.Models
+namespace UmbracoResumeWebsite.Core.Models
 {
     public class UmbracoNavigation
     {

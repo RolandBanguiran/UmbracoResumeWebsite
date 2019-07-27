@@ -2332,8 +2332,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\SiteLayoutController.cs" />
-    <Compile Include="Models\UmbracoNavigation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2484,6 +2482,12 @@
   <ItemGroup>
     <Folder Include="Views\MacroPartials\" />
     <Folder Include="Views\Partials\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmbracoResumeWebsite.Core\UmbracoResumeWebsite.Core.csproj">
+      <Project>{9d21b1dc-c9db-4585-8b5b-5fa22d9317c1}</Project>
+      <Name>UmbracoResumeWebsite.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
